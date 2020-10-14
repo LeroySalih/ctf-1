@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 app.get('/code/:code', (req, res) => {
   
   code = req.params.code
-  if (code == "5467"){
+  if (code == "999"){
     res.send('Hacked!  You have captued the flag.')
   } else {
     res.send('Invalid Code')
