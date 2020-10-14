@@ -5,6 +5,11 @@ const app = express()
 
 console.log(process.env.PORT)
 
+
+app.get('/', (req, res) => {
+  res.send('Capture the Flag.')
+})
+
 app.get('/code/:code', (req, res) => {
   
   code = req.params.code
